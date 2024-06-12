@@ -1,5 +1,5 @@
 import React from "react";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { useTypewriter } from "react-simple-typewriter";
 import "./Profile.css";
 
 export default function Profile() {
@@ -21,19 +21,16 @@ export default function Profile() {
         <div className="profile-details">
           <div className="colz">
             <div className="colz-icon">
-              <a href="#">
+              <a href="https://www.facebook.com/Sahrahan/">
                 <i className="fa fa-facebook-square" />
               </a>
-              <a href="#">
-                <i className="fa fa-google-plus-square" />
-              </a>
-              <a href="#">
+              <a href="https://www.instagram.com/mehmet_kal/">
                 <i className="fa fa-instagram" />
               </a>
-              <a href="#">
-                <i className="fa fa-youtube-square" />
+              <a href="https://github.com/MehmetKaldirim">
+                <i className="fa fa-github" />
               </a>
-              <a href="#">
+              <a href="https://x.com/mathdenizi">
                 <i className="fa fa-twitter" />
               </a>
             </div>
@@ -74,7 +71,7 @@ export default function Profile() {
               {" "}
               Hire Me{" "}
             </button>
-            <a href="ehizcv.pdf" download="Ehiedu Ehizcv.pdf">
+            <a href="Mehmet_Kaldirim.pdf" download="Mehmet_Kaldirim.pdf">
               <button className="btn highlighted-btn">Get Resume</button>
             </a>
           </div>
