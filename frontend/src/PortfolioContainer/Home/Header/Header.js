@@ -57,6 +57,7 @@ export default function Header() {
     };
   }, [currentScreenSubscription]);
 
+  console.log("");
   return (
     <div
       className="header-container"
