@@ -51,11 +51,11 @@ export default function Header() {
     setShowHeaderOptions(false);
   };
 
-  //useEffect(() => {
-  //  return () => {
-  //    currentScreenSubscription.unsubscribe();
-  //  };
-  //}, [currentScreenSubscription]);
+  useEffect(() => {
+    return () => {
+      currentScreenSubscription.unsubscribe();
+    };
+  }, [currentScreenSubscription]);
 
   return (
     <div
