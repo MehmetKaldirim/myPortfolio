@@ -43,7 +43,7 @@ export default function Header() {
   };
 
   const switchScreen = (index, screen) => {
-    let screenComponent = document.getElementById(Screen.screen_name);
+    let screenComponent = document.getElementById(screen.screen_name);
     if (!screenComponent) return;
 
     screenComponent.scrollIntoView({ behavior: "smooth" });
@@ -57,7 +57,6 @@ export default function Header() {
     };
   }, [currentScreenSubscription]);
 
-  console.log("");
   return (
     <div
       className="header-container"

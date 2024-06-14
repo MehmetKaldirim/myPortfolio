@@ -2,6 +2,11 @@ import React, { useState, useEffect } from "react";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
+import educationSvg from "../../assets/Resume/education.svg";
+import interestsSvg from "../../assets/Resume/interests.svg";
+import programmingSvg from "../../assets/Resume/programming-skills.svg";
+import projectsSvg from "../../assets/Resume/projects.svg";
+import workHistorySvg from "../../assets/Resume/work-history.svg";
 import "./Resume.css";
 
 const Resume = (props) => {
@@ -44,11 +49,11 @@ const Resume = (props) => {
 
   /* STATIC RESUME DATA FOR THE LABELS*/
   const resumeBullets = [
-    { label: "Education", logoSrc: "education.svg" },
-    { label: "Work History", logoSrc: "work-history.svg" },
-    { label: "Programming Skills", logoSrc: "programming-skills.svg" },
-    { label: "Projects", logoSrc: "projects.svg" },
-    { label: "Interests", logoSrc: "interests.svg" },
+    { label: "Education", logoSrc: educationSvg },
+    { label: "Work History", logoSrc: workHistorySvg },
+    { label: "Programming Skills", logoSrc: programmingSvg },
+    { label: "Projects", logoSrc: projectsSvg },
+    { label: "Interests", logoSrc: interestsSvg },
   ];
 
   //here we have
@@ -92,23 +97,23 @@ const Resume = (props) => {
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
       <ResumeHeading
+        heading={"CYDEO"}
+        subHeading={"Java Developer Course"}
+        fromDate={"2021"}
+        toDate={"2022"}
+      />
+      <ResumeHeading
         heading={"University of Legon Accra, Ghana"}
         subHeading={"BACHELOR OF COMPUTER ENGINEER"}
-        fromDate={"2000"}
-        toDate={"1996"}
+        fromDate={"1996"}
+        toDate={"2000"}
       />
 
       <ResumeHeading
-        heading={"National Youth Service Corps"}
-        subHeading={"Ministry Of Science And Technogy. Uyo Akwa Ibom State"}
-        fromDate={"2019"}
-        toDate={"2020"}
-      />
-      <ResumeHeading
         heading={"High School "}
         subHeading={"Navy High School"}
-        fromDate={"1996"}
-        toDate={"1992"}
+        fromDate={"1992"}
+        toDate={"1996"}
       />
     </div>,
 
@@ -116,7 +121,7 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Mehmet KALDIRIM"}
+          heading={"Freelancer"}
           subHeading={"FULL STACK DEVELOPER INTERN"}
           fromDate={"2023"}
           toDate={"Present"}
@@ -218,7 +223,8 @@ const Resume = (props) => {
       >
         <img
           className="bullet-logo"
-          src={require(`../../assets/Resume/${bullet.logoSrc}`).default}
+          //src={require(`../../assets/Resume/${bullet.logoSrc}`).default}
+          src={bullet.logoSrc}
           alt="B"
         />
         <span className="bullet-label">{bullet.label}</span>
