@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Typical from "react-typical";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { useTypewriter } from "react-simple-typewriter";
