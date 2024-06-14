@@ -1,5 +1,6 @@
 import React from "react";
 import { useTypewriter } from "react-simple-typewriter";
+import ScrollService from "../../../utilities/ScrollService";
 import "./Profile.css";
 
 export default function Profile() {
@@ -66,7 +67,7 @@ export default function Profile() {
           <div className="profile-options">
             <button
               className="btn primary-btn"
-              //onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
+              onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
             >
               {" "}
               Hire Me{" "}
