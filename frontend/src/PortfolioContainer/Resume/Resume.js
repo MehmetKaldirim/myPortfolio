@@ -43,6 +43,14 @@ const Resume = (props) => {
         <div className="resume-heading-description">
           <span>{props.description ? props.description : ""}</span>
         </div>
+        {props.link && (
+          <div className="resume-link">
+            <a href={props.link}>
+              <i className="fa fa-link" />
+              {"Go to project "}
+            </a>
+          </div>
+        )}
       </div>
     );
   };
@@ -76,6 +84,7 @@ const Resume = (props) => {
       description:
         "A Personal Portfolio website to showcase all my details and projects at one place.",
       subHeading: "Technologies Used: React JS, Bootsrap",
+      link: "https://mehmetkaldirim-1cdb28d0493d.herokuapp.com/",
     },
     {
       title: "Ecommerce Website ",
@@ -84,13 +93,16 @@ const Resume = (props) => {
         "Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
       subHeading:
         "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
+      link: "https://mathshop-2438bf3edfe7.herokuapp.com/",
     },
     {
-      title: "Ticketing App ",
-      duration: { fromDate: "2022", toDate: "2023" },
+      title: "Place visited ",
+      duration: { fromDate: "2023", toDate: "2024" },
       description:
-        "A ticketting application, orginize the tasks and projects for any companies",
-      subHeading: "Technologies Used:  Java, Spring Boot, Postgress",
+        "Online  website for showcasing where you visited before and sharing your photos",
+      subHeading:
+        "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux,",
+      link: "https://memory-remains-mern.web.app/",
     },
   ];
 
@@ -103,7 +115,7 @@ const Resume = (props) => {
         toDate={"2022"}
       />
       <ResumeHeading
-        heading={"University of Legon Accra, Ghana"}
+        heading={"Naval Academy, Istanbul-Turkey"}
         subHeading={"BACHELOR OF COMPUTER ENGINEER"}
         fromDate={"1996"}
         toDate={"2000"}
@@ -122,7 +134,7 @@ const Resume = (props) => {
       <div className="experience-container">
         <ResumeHeading
           heading={"Freelancer"}
-          subHeading={"FULL STACK DEVELOPER INTERN"}
+          subHeading={"FULL STACK DEVELOPER"}
           fromDate={"2023"}
           toDate={"Present"}
         />
@@ -180,6 +192,7 @@ const Resume = (props) => {
           description={projectsDetails.description}
           fromDate={projectsDetails.duration.fromDate}
           toDate={projectsDetails.duration.toDate}
+          link={projectsDetails.link}
         />
       ))}
     </div>,
