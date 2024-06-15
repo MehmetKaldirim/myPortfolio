@@ -78,14 +78,14 @@ const Resume = (props) => {
   ];
 
   const projectsDetails = [
-    {
-      title: "Personal Portfolio Website",
-      duration: { fromDate: "2023", toDate: "2024" },
-      description:
-        "A Personal Portfolio website to showcase all my details and projects at one place.",
-      subHeading: "Technologies Used: React JS, Bootsrap",
-      link: "https://mehmetkaldirim-1cdb28d0493d.herokuapp.com/",
-    },
+    // {
+    //   title: "Personal Portfolio Website",
+    //   duration: { fromDate: "2023", toDate: "2024" },
+    //   description:
+    //     "A Personal Portfolio website to showcase all my details and projects at one place.",
+    //   subHeading: "Technologies Used: React JS, Bootsrap",
+    //   link: "https://mehmetkaldirim-1cdb28d0493d.herokuapp.com/",
+    // },
     {
       title: "Ecommerce Website ",
       duration: { fromDate: "2023", toDate: "2024" },
@@ -98,8 +98,7 @@ const Resume = (props) => {
     {
       title: "Place visited ",
       duration: { fromDate: "2023", toDate: "2024" },
-      description:
-        "Online  website for showcasing where you visited before and sharing your photos",
+      description: "Online  website for showcasing where you visited.",
       subHeading:
         "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux,",
       link: "https://memory-remains-mern.web.app/",
@@ -115,7 +114,7 @@ const Resume = (props) => {
         toDate={"2022"}
       />
       <ResumeHeading
-        heading={"Naval Academy, Istanbul-Turkey"}
+        heading={"Naval Academy, Turkey"}
         subHeading={"BACHELOR OF COMPUTER ENGINEER"}
         fromDate={"1996"}
         toDate={"2000"}

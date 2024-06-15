@@ -59,7 +59,7 @@
   align-items: center;
   cursor: pointer;
   background-color: #1f2235;
-  height: 40px;
+  height: 30px;
   margin: 15px 0;
   padding: 0 8px;
   border-radius: 20px;
@@ -239,5 +239,44 @@
 
   .selected-bullet {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .resume-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bullets {
+    width: 80%;
+  }
+
+  .resume-card {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    align-items: center;
+    width: 90%;
+  }
+
+  .resume-bullet-details {
+    height: 340px;
+    padding: 0;
+    width: fit-content;
+  }
+
+  .resume-bullets {
+    margin: 25px 0;
+    width: 100%;
+  }
+
+  .selected-bullet {
+    width: 100%;
+  }
+  .heading-date {
+    font-size: 12px;
   }
 }
