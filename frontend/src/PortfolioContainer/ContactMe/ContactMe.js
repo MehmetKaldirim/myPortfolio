@@ -66,9 +66,10 @@ export default function ContactMe(props) {
 
   const [typeEffect] = useTypewriter({
     words: ["Get In Touch 📧", "Email me 📧"],
-    loop: 1,
+    loop: {},
     typeSpeed: 100,
     deleteSpeed: 40,
+    delaySpeed: 1000,
   });
   return (
     <div className="main-container fade-in" id={props.id || ""}>

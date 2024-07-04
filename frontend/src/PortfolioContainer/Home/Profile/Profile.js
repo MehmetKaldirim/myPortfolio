@@ -7,14 +7,15 @@ export default function Profile() {
   const [typeEffect] = useTypewriter({
     words: [
       "Enthusiastic Dev😎",
-      "Mern Stack Developer 📱",
+      "Mern Stack Dev 📱",
       //"Cross Platform Developer 🔴",
-      "React/React Native Developer 🌐",
-      "Full Stack Developer 💻",
+      "React Dev 🌐",
+      "Full Stack Dev 💻",
     ],
-    loop: 1,
+    loop: {},
     typeSpeed: 100,
     deleteSpeed: 40,
+    delaySpeed: 1000,
   });
   return (
     <div className="profile-container">
@@ -47,7 +48,6 @@ export default function Profile() {
             <span className="primary-text">
               {" "}
               <h1 style={{ color: "red" }}>
-                I' am a{" "}
                 <span
                   style={{
                     fontWeight: "bold",
