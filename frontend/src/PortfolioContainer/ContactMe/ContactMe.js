@@ -66,7 +66,7 @@ export default function ContactMe(props) {
 
   const [typeEffect] = useTypewriter({
     words: ["Get In Touch 📧", "Email me 📧"],
-    loop: {},
+    loop: 1,
     typeSpeed: 100,
     deleteSpeed: 40,
   });

@@ -7,12 +7,12 @@ export default function Profile() {
   const [typeEffect] = useTypewriter({
     words: [
       "Enthusiastic Dev😎",
-      "Full Stack Developer 💻",
       "Mern Stack Developer 📱",
-      "Cross Platform Developer 🔴",
+      //"Cross Platform Developer 🔴",
       "React/React Native Developer 🌐",
+      "Full Stack Developer 💻",
     ],
-    loop: {},
+    loop: 1,
     typeSpeed: 100,
     deleteSpeed: 40,
   });
