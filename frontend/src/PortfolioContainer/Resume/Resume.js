@@ -96,12 +96,14 @@ const Resume = (props) => {
       link: "https://mathshop-2438bf3edfe7.herokuapp.com/",
     },
     {
-      title: "Place visited ",
+      title: "My Blog ",
       duration: { fromDate: "2023", toDate: "2024" },
-      description: "Online  website for showcasing where you visited.",
+      description:
+        "My-Blog is a full-stack web application designed for creating, managing, and sharing blog posts.",
       subHeading:
-        "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux,",
-      link: "https://memory-remains-mern.web.app/",
+        "Technologies Used: : React, Redux, Vite, Tailwind CSS, Flowbite React, Expressjs, Nodejs",
+      link: "https://my-blog-5180-eecfdc018cd7.herokuapp.com/",
+      //link: "https://memory-remains-mern.web.app/",
     },
   ];
 
