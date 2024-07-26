@@ -86,6 +86,17 @@ const Resume = (props) => {
     //   subHeading: "Technologies Used: React JS, Bootsrap",
     //   link: "https://mehmetkaldirim-1cdb28d0493d.herokuapp.com/",
     // },
+
+    {
+      title: "All My Projects",
+      duration: { fromDate: "2022", toDate: "2024" },
+      description: " Please click to link to see my all projects.",
+      subHeading:
+        "Technologies Used: : React, Redux, Vite, Tailwind CSS, Flowbite React, Expressjs, Nodejs",
+      link: "https://my-all-projects-5d96e0a3d10b.herokuapp.com/",
+      //link: "https://memory-remains-mern.web.app/",
+    },
+
     {
       title: "Ecommerce Website ",
       duration: { fromDate: "2023", toDate: "2024" },
@@ -94,16 +105,6 @@ const Resume = (props) => {
       subHeading:
         "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
       link: "https://mathshop-2438bf3edfe7.herokuapp.com/",
-    },
-    {
-      title: "My Blog ",
-      duration: { fromDate: "2023", toDate: "2024" },
-      description:
-        "My-Blog is a full-stack web application designed for creating, managing, and sharing blog posts.",
-      subHeading:
-        "Technologies Used: : React, Redux, Vite, Tailwind CSS, Flowbite React, Expressjs, Nodejs",
-      link: "https://my-blog-5180-eecfdc018cd7.herokuapp.com/",
-      //link: "https://memory-remains-mern.web.app/",
     },
   ];
 
